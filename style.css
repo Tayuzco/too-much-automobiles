@@ -524,3 +524,20 @@ nav a {
     }
 
 }
+/* Mobile popup scrolling fix */
+
+.modal-content {
+    max-height: 90vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+
+    .modal-content {
+        width: 95%;
+        max-height: 90vh;
+        padding: 20px;
+    }
+
+}
