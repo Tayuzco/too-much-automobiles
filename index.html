@@ -5,288 +5,1208 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>TOO MUCH AUTOMOBILES</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
     <header>
+
         <div class="brand">
 
-    <img
-        src="images/too-much-automobiles-logo.png"
-        alt="TOO MUCH AUTOMOBILES Logo"
-        class="site-logo"
-    >
+            <img
+                src="images/too-much-automobiles-logo.png"
+                alt="TOO MUCH AUTOMOBILES Logo"
+                class="site-logo"
+            >
 
-    <div>
-        <h2>TOO MUCH AUTOMOBILES</h2>
-        <p>Quality Cars. Trusted Deals.</p>
-    </div>
+            <div>
+                <h2>TOO MUCH AUTOMOBILES</h2>
+                <p>Quality Cars. Trusted Deals.</p>
+            </div>
 
-    </div>
+        </div>
 
         <nav>
-             <a href="#home">Home</a>
-             <a href="#cars">Cars</a>
-             <a href="#about">About</a>
-             <a href="#contact">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#cars">Cars</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
         </nav>
+
     </header>
 
 
-    <!-- Hero Section -->
-    <section id="Home">
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
 
-        <h1>Find Your Dream Car</h1>
+    <section id="home">
 
-        <p>
-            Quality Cars. Trusted Deals.
-        </p>
+        <div class="hero-content">
 
-        <p>
-            Discover quality vehicles at TOO MUCH AUTOMOBILES.
-        </p>
+            <p class="hero-tagline">
+                WELCOME TO TOO MUCH AUTOMOBILES
+            </p>
 
-        <a href="#cars">
-          <button>View Available Cars</button>
-        </a>
+            <h1>Find Your Dream Car</h1>
+
+            <p class="hero-subtitle">
+                Quality Cars. Trusted Deals.
+            </p>
+
+            <p class="hero-description">
+                Discover quality vehicles at TOO MUCH AUTOMOBILES.
+                We make finding your next car simple and reliable.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#cars" class="hero-btn primary-btn">
+                    Browse Available Cars
+                </a>
+
+                <a
+                    href="https://wa.me/2348123261878?text=Hello%20TOO%20MUCH%20AUTOMOBILES%2C%20I%20am%20interested%20in%20your%20available%20cars."
+                    class="hero-btn whatsapp-btn"
+                    target="_blank"
+                >
+                    💬 Chat on WhatsApp
+                </a>
+
+            </div>
+
+        </div>
 
     </section>
 
-<!-- Cars Section -->
 
-<section class="cars" id="cars">
+    <!-- =========================
+         CARS SECTION
+    ========================== -->
 
-    <h2>Our Available Cars</h2>
-<div class="search-box">
-    <input
-        type="text"
-        id="carSearch"
-        placeholder="Search for a car..."
-    >
-</div>
+    <section class="cars" id="cars">
 
-    <div class="car-container">
-
-        <!-- Car 1 -->
-        <div class="car-card">
-
-    <div class="car-image">
-
-        <img src="images/lexus-rx350.jpeg" alt="Lexus RX350">
-
-        <span class="status-badge">AVAILABLE</span>
-
-    </div>
-
-    <h3>LEXUS RX350</h3>
-
-<p>Year: 2012</p>
-
-<p>Condition: Locally Used</p>
-
-<div class="car-specs">
-    <span>⚙️ Automatic</span>
-    <span>⛽ Petrol</span>
-    <span>📍 Lagos</span>
-</div>
-
-<p class="price">₦14,000,000</p>
-
-    <button onclick="showCarDetails(
-        'LEXUS RX350',
-        '2012',
-        'Locally Used',
-        'Automatic',
-        'Petrol',
-        'Lagos',
-        '₦14,000,000',
-        'Locally Used Lexus RX350 available at TOO MUCH AUTOMOBILES.',
-        'images/lexus-rx350/front.jpeg')">
-       View Details
-    </button>
-
-</div>
+        <h2>Our Available Cars</h2>
 
 
-        <!-- Car 2 -->
-        <div class="car-card">
+        <!-- =========================
+             FEATURED VEHICLES
+        ========================== -->
 
-    <div class="car-image">
+        <div class="featured-section">
 
-        <img src="images/honda-accord-2015/front.jpeg" alt="Honda Accord 2015">
+            <h2>⭐ Featured Vehicles</h2>
 
-        <span class="status-badge">AVAILABLE</span>
+            <p class="featured-intro">
+                Take a look at some of our featured vehicles.
+            </p>
 
-    </div>
-
-    <h3>HONDA ACCORD</h3>
-
-<p>Year: 2015</p>
-
-<p>Condition: Foreign Used</p>
-
-<div class="car-specs">
-    <span>⚙️ Automatic</span>
-    <span>⛽ Petrol</span>
-    <span>📍 Lagos</span>
-</div>
-
-<p class="price">₦14,500,000</p>
-
-    <button onclick="showCarDetails(
-        'HONDA ACCORD',
-        '2015',
-        'Foreign Used',
-        'Automatic',
-        'Petrol',
-        'Lagos',
-        '₦14,500,000',
-        'Foreign Used Honda Accord available at TOO MUCH AUTOMOBILES.',
-        'images/honda-accord-2015/front.jpeg')">
-      View Details
-    </button>
-
-</div>
+            <div class="featured-cars">
 
 
-        <!-- Car 3 -->
-        <div class="car-card">
+                <!-- Featured Lexus RX350 -->
 
-    <div class="car-image">
+                <div class="featured-card">
 
-        <img src="images/mercedes-gle350-2016.jpeg" alt="Mercedes-Benz GLE350 2016">
+                    <img
+                        src="images/lexus-rx350/front.jpeg"
+                        alt="Lexus RX350"
+                    >
 
-        <span class="status-badge">AVAILABLE</span>
+                    <div class="featured-info">
 
-    </div>
+                        <span class="featured-badge">
+                            FEATURED
+                        </span>
 
-    <h3>MERCEDES BENZ GLE350</h3>
+                        <h3>LEXUS RX350</h3>
 
-<p>Year: 2016</p>
+                        <p>
+                            2012 • Locally Used • Automatic
+                        </p>
 
-<p>Condition: Foreign Used</p>
+                        <p class="featured-price">
+                            ₦14,000,000
+                        </p>
 
-<div class="car-specs">
-    <span>⚙️ Automatic</span>
-    <span>⛽ Petrol</span>
-    <span>📍 Lagos</span>
-</div>
+                        <button
+                            class="featured-button"
+                            onclick="showCarDetails(
+                                'LEXUS RX350',
+                                '2012',
+                                'Locally Used',
+                                'Automatic',
+                                'Petrol',
+                                'Lagos',
+                                '₦14,000,000',
+                                'Locally Used Lexus RX350 available at TOO MUCH AUTOMOBILES.',
+                                'images/lexus-rx350/front.jpeg'
+                            )"
+                        >
+                            View Vehicle
+                        </button>
 
-<p class="price">₦35,000,000</p>
+                    </div>
 
-    <button onclick="showCarDetails(
-        'MERCEDES BENZ GLE350',
-        '2016',
-        'Foreign Used',
-        'Automatic',
-        'Petrol',
-        'Lagos',
-        '₦35,000,000',
-        'Foreign Used Mercedes Benz GLE350 available at TOO MUCH AUTOMOBILES.',
-        'images/mercedes-gle350-2016/front.jpeg')">
-      View Details
-    </button>
+                </div>
 
-</div>
 
-    </div>
+                <!-- Featured Toyota Venza -->
 
-</section>
-    <!-- About -->
+                <div class="featured-card">
+
+                    <img
+                        src="images/toyota-venza-2010/front.jpeg"
+                        alt="Toyota Venza"
+                    >
+
+                    <div class="featured-info">
+
+                        <span class="featured-badge">
+                            FEATURED
+                        </span>
+
+                        <h3>TOYOTA VENZA</h3>
+
+                        <p>
+                            2010 • Foreign Used • Automatic
+                        </p>
+
+                        <p class="featured-price">
+                            ₦15,300,000
+                        </p>
+
+                        <button
+                            class="featured-button"
+                            onclick="showCarDetails(
+                                'TOYOTA VENZA',
+                                '2010',
+                                'Foreign Used',
+                                'Automatic',
+                                'Petrol',
+                                'Lagos',
+                                '₦15,300,000',
+                                'Accident free Toyota Venza in Toks standard and excellent condition.',
+                                'images/toyota-venza-2010/front.jpeg'
+                            )"
+                        >
+                            View Vehicle
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Featured Mercedes C300 -->
+
+                <div class="featured-card">
+
+                    <img
+                        src="images/mercedes-benz-c300-2016/front.jpeg"
+                        alt="Mercedes Benz C300"
+                    >
+
+                    <div class="featured-info">
+
+                        <span class="featured-badge">
+                            FEATURED
+                        </span>
+
+                        <h3>MERCEDES BENZ C300</h3>
+
+                        <p>
+                            2016 • Foreign Used • Automatic
+                        </p>
+
+                        <p class="featured-price">
+                            ₦21,000,000
+                        </p>
+
+                        <button
+                            class="featured-button"
+                            onclick="showCarDetails(
+                                'MERCEDES BENZ C300',
+                                '2016',
+                                'Foreign Used',
+                                'Automatic',
+                                'Petrol',
+                                'Lagos',
+                                '₦21,000,000',
+                                'Accident free and in premium condition.',
+                                'images/mercedes-benz-c300-2016/front.jpeg'
+                            )"
+                        >
+                            View Vehicle
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             SEARCH & FILTERS
+        ========================== -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="carSearch"
+                placeholder="🔍 Search by car name..."
+            >
+
+            <select id="conditionFilter">
+
+                <option value="">
+                    All Conditions
+                </option>
+
+                <option value="Foreign Used">
+                    Foreign Used
+                </option>
+
+                <option value="Locally Used">
+                    Locally Used
+                </option>
+
+            </select>
+
+
+            <select id="fuelFilter">
+
+                <option value="">
+                    All Fuel Types
+                </option>
+
+                <option value="Petrol">
+                    Petrol
+                </option>
+
+                <option value="Diesel">
+                    Diesel
+                </option>
+
+            </select>
+
+
+            <select id="yearFilter">
+
+                <option value="">
+                    All Years
+                </option>
+
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2007">2007</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+
+            </select>
+
+        </div>
+
+
+        <!-- =========================
+             AVAILABLE CARS
+        ========================== -->
+
+        <div class="car-container">
+
+
+            <!-- 1. LEXUS RX350 -->
+
+            <div class="car-card">
+
+                <div class="car-image">
+
+                    <img
+                        src="images/lexus-rx350.jpeg"
+                        alt="Lexus RX350"
+                    >
+
+                    <span class="status-badge">
+                        AVAILABLE
+                    </span>
+
+                </div>
+
+                <h3>LEXUS RX350</h3>
+
+                <p>Year: 2012</p>
+
+                <p>Condition: Locally Used</p>
+
+                <div class="car-specs">
+                    <span>⚙️ Automatic</span>
+                    <span>⛽ Petrol</span>
+                    <span>📍 Lagos</span>
+                </div>
+
+                <p class="price">
+                    ₦14,000,000
+                </p>
+
+                <button
+                    onclick="showCarDetails(
+                        'LEXUS RX350',
+                        '2012',
+                        'Locally Used',
+                        'Automatic',
+                        'Petrol',
+                        'Lagos',
+                        '₦14,000,000',
+                        'Locally Used Lexus RX350 available at TOO MUCH AUTOMOBILES.',
+                        'images/lexus-rx350/front.jpeg'
+                    )"
+                >
+                    View Details
+                </button>
+
+            </div>
+
+
+            <!-- 2. TOYOTA VENZA -->
+
+            <div class="car-card">
+
+                <div class="car-image">
+
+                    <img
+                        src="images/toyota-venza-2010.jpeg"
+                        alt="Toyota Venza"
+                    >
+
+                    <span class="status-badge">
+                        AVAILABLE
+                    </span>
+
+                </div>
+
+                <h3>TOYOTA VENZA</h3>
+
+                <p>Year: 2010</p>
+
+                <p>Condition: Foreign Used</p>
+
+                <div class="car-specs">
+                    <span>⚙️ Automatic</span>
+                    <span>⛽ Petrol</span>
+                    <span>📍 Lagos</span>
+                </div>
+
+                <p class="price">
+                    ₦15,300,000
+                </p>
+
+                <button
+                    onclick="showCarDetails(
+                        'TOYOTA VENZA',
+                        '2010',
+                        'Foreign Used',
+                        'Automatic',
+                        'Petrol',
+                        'Lagos',
+                        '₦15,300,000',
+                        'Accident free Toyota Venza in Toks standard and excellent condition.',
+                        'images/toyota-venza-2010/front.jpeg'
+                    )"
+                >
+                    View Details
+                </button>
+
+            </div>
+
+
+            <!-- 3. MERCEDES BENZ C300 -->
+
+            <div class="car-card">
+
+                <div class="car-image">
+
+                    <img
+                        src="images/mercedes-benz-c300-2016.jpeg"
+                        alt="Mercedes Benz C300"
+                    >
+
+                    <span class="status-badge">
+                        AVAILABLE
+                    </span>
+
+                </div>
+
+                <h3>MERCEDES BENZ C300</h3>
+
+                <p>Year: 2016</p>
+
+                <p>Condition: Foreign Used</p>
+
+                <div class="car-specs">
+                    <span>⚙️ Automatic</span>
+                    <span>⛽ Petrol</span>
+                    <span>📍 Lagos</span>
+                </div>
+
+                <p class="price">
+                    ₦21,000,000
+                </p>
+
+                <button
+                    onclick="showCarDetails(
+                        'MERCEDES BENZ C300',
+                        '2016',
+                        'Foreign Used',
+                        'Automatic',
+                        'Petrol',
+                        'Lagos',
+                        '₦21,000,000',
+                        'Accident free and in premium condition.',
+                        'images/mercedes-benz-c300-2016/front.jpeg'
+                    )"
+                >
+                    View Details
+                </button>
+
+            </div>
+
+
+            <!-- 4. TOYOTA HIGHLANDER XLE -->
+
+            <div class="car-card">
+
+                <div class="car-image">
+
+                    <img
+                        src="images/toyota-highlander-xle-2016.jpeg"
+                        alt="Toyota Highlander XLE"
+                    >
+
+                    <span class="status-badge">
+                        AVAILABLE
+                    </span>
+
+                </div>
+
+                <h3>TOYOTA HIGHLANDER XLE</h3>
+
+                <p>Year: 2016</p>
+
+                <p>Condition: Foreign Used</p>
+
+                <div class="car-specs">
+                    <span>⚙️ Automatic</span>
+                    <span>⛽ Petrol</span>
+                    <span>📍 Lagos</span>
+                </div>
+
+                <p class="price">
+                    ₦29,500,000
+                </p>
+
+                <button
+                    onclick="showCarDetails(
+                        'TOYOTA HIGHLANDER XLE',
+                        '2016',
+                        'Foreign Used',
+                        'Automatic',
+                        'Petrol',
+                        'Lagos',
+                        '₦29,500,000',
+                        'Full option in perfect condition.',
+                        'images/toyota-highlander-xle-2016/front.jpeg'
+                    )"
+                >
+                    View Details
+                </button>
+
+            </div>
+
+
+            <!-- 5. TOYOTA CAMRY BIG DADDY -->
+
+            <div class="car-card">
+
+                <div class="car-image">
+
+                    <img
+                        src="images/toyota-camry-big-daddy-2004.jpeg"
+                        alt="Toyota Camry Big Daddy"
+                    >
+
+                    <span class="status-badge">
+                        AVAILABLE
+                    </span>
+
+                </div>
+
+                <h3>TOYOTA CAMRY (BIG DADDY)</h3>
+
+                <p>Year: 2004</p>
+
+                <p>Condition: Locally Used</p>
+
+                <div class="car-specs">
+                    <span>⚙️ Automatic</span>
+                    <span>⛽ Petrol</span>
+                    <span>📍 Lagos</span>
+                </div>
+
+                <p class="price">
+                    ₦4,300,000
+                </p>
+
+                <button
+                    onclick="showCarDetails(
+                        'TOYOTA CAMRY (BIG DADDY)',
+                        '2004',
+                        'Locally Used',
+                        'Automatic',
+                        'Petrol',
+                        'Lagos',
+                        '₦4,300,000',
+                        'First body pan and neatly used.',
+                        'images/toyota-camry-big-daddy-2004/front.jpeg'
+                    )"
+                >
+                    View Details
+                </button>
+
+            </div>
+
+
+            <!-- 6. TOYOTA HIGHLANDER 2-ROWS -->
+
+            <div class="car-card">
+
+                <div class="car-image">
+
+                    <img
+                        src="images/toyota-highlander-2-rows-2005.jpeg"
+                        alt="Toyota Highlander 2-Rows"
+                    >
+
+                    <span class="status-badge">
+                        AVAILABLE
+                    </span>
+
+                </div>
+
+                <h3>TOYOTA HIGHLANDER (2-ROWS)</h3>
+
+                <p>Year: 2005</p>
+
+                <p>Condition: Locally Used</p>
+
+                <div class="car-specs">
+                    <span>⚙️ Automatic</span>
+                    <span>⛽ Petrol</span>
+                    <span>📍 Lagos</span>
+                </div>
+
+                <p class="price">
+                    ₦6,400,000
+                </p>
+
+                <button
+                    onclick="showCarDetails(
+                        'TOYOTA HIGHLANDER (2-ROWS)',
+                        '2005',
+                        'Locally Used',
+                        'Automatic',
+                        'Petrol',
+                        'Lagos',
+                        '₦6,400,000',
+                        'Neatly used 4plugs engine.',
+                        'images/toyota-highlander-2-rows-2005/front.jpeg'
+                    )"
+                >
+                    View Details
+                </button>
+
+            </div>
+
+
+            <!-- 7. LEXUS ES350 -->
+
+            <div class="car-card">
+
+                <div class="car-image">
+
+                    <img
+                        src="images/lexus-es350-2011.jpeg"
+                        alt="Lexus ES350"
+                    >
+
+                    <span class="status-badge">
+                        AVAILABLE
+                    </span>
+
+                </div>
+
+                <h3>LEXUS ES350</h3>
+
+                <p>Year: 2011</p>
+
+                <p>Condition: Foreign Used</p>
+
+                <div class="car-specs">
+                    <span>⚙️ Automatic</span>
+                    <span>⛽ Petrol</span>
+                    <span>📍 Lagos</span>
+                </div>
+
+                <p class="price">
+                    ₦13,500,000
+                </p>
+
+                <button
+                    onclick="showCarDetails(
+                        'LEXUS ES350',
+                        '2011',
+                        'Foreign Used',
+                        'Automatic',
+                        'Petrol',
+                        'Lagos',
+                        '₦13,500,000',
+                        'Accident free and in premium condition.',
+                        'images/lexus-es350-2011/front.jpeg'
+                    )"
+                >
+                    View Details
+                </button>
+
+            </div>
+
+
+            <!-- 8. TOYOTA RAV4 2-ROWS -->
+
+            <div class="car-card">
+
+                <div class="car-image">
+
+                    <img
+                        src="images/toyota-rav4-2-rows-2007.jpeg"
+                        alt="Toyota RAV4 2-Rows"
+                    >
+
+                    <span class="status-badge">
+                        AVAILABLE
+                    </span>
+
+                </div>
+
+                <h3>TOYOTA RAV4 (2-ROWS)</h3>
+
+                <p>Year: 2007</p>
+
+                <p>Condition: Locally Used</p>
+
+                <div class="car-specs">
+                    <span>⚙️ Automatic</span>
+                    <span>⛽ Petrol</span>
+                    <span>📍 Lagos</span>
+                </div>
+
+                <p class="price">
+                    ₦6,800,000
+                </p>
+
+                <button
+                    onclick="showCarDetails(
+                        'TOYOTA RAV4 (2-ROWS)',
+                        '2007',
+                        'Locally Used',
+                        'Automatic',
+                        'Petrol',
+                        'Lagos',
+                        '₦6,800,000',
+                        'Neatly used 4plugs engine.',
+                        'images/toyota-rav4-2-rows-2007/front.jpeg'
+                    )"
+                >
+                    View Details
+                </button>
+
+            </div>
+
+
+            <!-- 9. HONDA ACCORD -->
+
+            <div class="car-card">
+
+                <div class="car-image">
+
+                    <img
+                        src="images/honda-accord-2015/front.jpeg"
+                        alt="Honda Accord 2015"
+                    >
+
+                    <span class="status-badge">
+                        AVAILABLE
+                    </span>
+
+                </div>
+
+                <h3>HONDA ACCORD</h3>
+
+                <p>Year: 2015</p>
+
+                <p>Condition: Foreign Used</p>
+
+                <div class="car-specs">
+                    <span>⚙️ Automatic</span>
+                    <span>⛽ Petrol</span>
+                    <span>📍 Lagos</span>
+                </div>
+
+                <p class="price">
+                    ₦14,500,000
+                </p>
+
+                <button
+                    onclick="showCarDetails(
+                        'HONDA ACCORD',
+                        '2015',
+                        'Foreign Used',
+                        'Automatic',
+                        'Petrol',
+                        'Lagos',
+                        '₦14,500,000',
+                        'Foreign Used Honda Accord available at TOO MUCH AUTOMOBILES.',
+                        'images/honda-accord-2015/front.jpeg'
+                    )"
+                >
+                    View Details
+                </button>
+
+            </div>
+
+
+            <!-- 10. MERCEDES BENZ GLE350 -->
+
+            <div class="car-card">
+
+                <div class="car-image">
+
+                    <img
+                        src="images/mercedes-gle350-2016.jpeg"
+                        alt="Mercedes-Benz GLE350 2016"
+                    >
+
+                    <span class="status-badge">
+                        AVAILABLE
+                    </span>
+
+                </div>
+
+                <h3>MERCEDES BENZ GLE350</h3>
+
+                <p>Year: 2016</p>
+
+                <p>Condition: Foreign Used</p>
+
+                <div class="car-specs">
+                    <span>⚙️ Automatic</span>
+                    <span>⛽ Petrol</span>
+                    <span>📍 Lagos</span>
+                </div>
+
+                <p class="price">
+                    ₦35,000,000
+                </p>
+
+                <button
+                    onclick="showCarDetails(
+                        'MERCEDES BENZ GLE350',
+                        '2016',
+                        'Foreign Used',
+                        'Automatic',
+                        'Petrol',
+                        'Lagos',
+                        '₦35,000,000',
+                        'Foreign Used Mercedes Benz GLE350 available at TOO MUCH AUTOMOBILES.',
+                        'images/mercedes-gle350-2016/front.jpeg'
+                    )"
+                >
+                    View Details
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT SECTION
+    ========================== -->
 
     <section id="about">
 
-        <h2>Welcome to TOO MUCH AUTOMOBILES</h2>
+        <div class="about-content">
 
-        <p>
-            We are committed to helping you find reliable,
-            affordable and quality vehicles.
-        </p>
+            <div class="about-text">
+
+                <span class="section-label">
+                    ABOUT US
+                </span>
+
+                <h2>
+                    Welcome to TOO MUCH AUTOMOBILES
+                </h2>
+
+                <p class="about-lead">
+                    Quality Cars. Trusted Deals.
+                </p>
+
+                <p>
+                    At TOO MUCH AUTOMOBILES, we are committed to helping
+                    you find reliable, affordable and quality vehicles
+                    that match your needs and budget.
+                </p>
+
+                <p>
+                    Whether you're looking for a locally used or foreign
+                    used vehicle, we provide a selection of carefully
+                    sourced cars with a focus on quality and customer
+                    satisfaction.
+                </p>
+
+            </div>
+
+
+            <div class="about-features">
+
+                <div class="about-feature">
+
+                    <span>🚘</span>
+
+                    <div>
+                        <h3>Quality Vehicles</h3>
+                        <p>
+                            Carefully selected vehicles for our customers.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="about-feature">
+
+                    <span>🤝</span>
+
+                    <div>
+                        <h3>Trusted Service</h3>
+                        <p>
+                            We put honesty and customer satisfaction first.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="about-feature">
+
+                    <span>💰</span>
+
+                    <div>
+                        <h3>Competitive Prices</h3>
+                        <p>
+                            Great vehicles at competitive prices.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="about-feature">
+
+                    <span>📍</span>
+
+                    <div>
+                        <h3>Lagos Based</h3>
+                        <p>
+                            Serving customers in Lagos and beyond.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </section>
 
 
-    <!-- Contact -->
+    <!-- =========================
+         CONTACT SECTION
+    ========================== -->
+
     <section id="contact">
 
-    <h2>Contact TOO MUCH AUTOMOBILES</h2>
+        <div class="contact-content">
 
-    <p>📞 Call us: <strong>09162660732</strong></p>
+            <div class="contact-heading">
 
-    <p>📱 WhatsApp us for enquiries</p>
+                <span class="section-label">
+                    GET IN TOUCH
+                </span>
 
-    <a href="https://wa.me/2349162660732?text=Hello%20TOO%20MUCH%20AUTOMOBILES,%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank">
-        <button>Chat With Us on WhatsApp</button>
-    </a>
+                <h2>
+                    Contact TOO MUCH AUTOMOBILES
+                </h2>
 
-    <p>📍 Lagos, Nigeria</p>
+                <p>
+                    Ready to find your next vehicle?
+                    Contact us today and let's help you find the right car.
+                </p>
+
+            </div>
+
+
+            <div class="contact-cards">
+
+
+                <div class="contact-card">
+
+                    <span class="contact-icon">
+                        📞
+                    </span>
+
+                    <h3>Call Us</h3>
+
+                    <p>
+                        Speak directly with our team.
+                    </p>
+
+                    <a href="tel:09162660732">
+                        09162660732
+                    </a>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <span class="contact-icon">
+                        💬
+                    </span>
+
+                    <h3>WhatsApp</h3>
+
+                    <p>
+                        Send us an enquiry on WhatsApp.
+                    </p>
+
+                    <a
+                        href="https://wa.me/2349162660732?text=Hello%20TOO%20MUCH%20AUTOMOBILES,%20I%20would%20like%20to%20make%20an%20enquiry."
+                        target="_blank"
+                    >
+                        Chat With Us
+                    </a>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <span class="contact-icon">
+                        📍
+                    </span>
+
+                    <h3>Our Location</h3>
+
+                    <p>
+                        Visit or contact us from:
+                    </p>
+
+                    <strong>
+                        Lagos, Nigeria
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </section>
 
 
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
     <footer>
-        <p>© 2026 TOO MUCH AUTOMOBILES. All Rights Reserved.</p>
+
+        <div class="footer-content">
+
+
+            <div class="footer-brand">
+
+                <h2>
+                    TOO MUCH AUTOMOBILES
+                </h2>
+
+                <p>
+                    Quality Cars. Trusted Deals.
+                </p>
+
+                <p>
+                    Your trusted destination for quality vehicles
+                    in Lagos, Nigeria.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="#home">Home</a>
+                <a href="#cars">Cars</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>
+                    Contact Us
+                </h3>
+
+                <p>
+                    📞 09162660732
+                </p>
+
+                <p>
+                    📍 Lagos, Nigeria
+                </p>
+
+                <a
+                    href="https://wa.me/2349162660732?text=Hello%20TOO%20MUCH%20AUTOMOBILES,%20I%20would%20like%20to%20make%20an%20enquiry."
+                    target="_blank"
+                >
+                    💬 WhatsApp Us
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 TOO MUCH AUTOMOBILES. All Rights Reserved.
+            </p>
+
+        </div>
+
     </footer>
-    <!-- Car Details Popup -->
 
-<!-- Car Details Popup -->
 
-<div id="carModal" class="modal">
+    <!-- =========================
+         CAR DETAILS POPUP
+    ========================== -->
 
-    <div class="modal-content">
+    <div id="carModal" class="modal">
 
-        <span class="close" onclick="closeCarDetails()">&times;</span>
+        <div class="modal-content">
 
-        <h2 id="modalCarName"></h2>
-    <div class="modal-gallery">
+            <span
+                class="close"
+                onclick="closeCarDetails()"
+            >
+                &times;
+            </span>
 
-    <img
-        id="modalMainImage"
-        src=""
-        alt="Vehicle"
+            <h2 id="modalCarName"></h2>
+
+
+            <div class="modal-gallery">
+
+                <img
+                    id="modalMainImage"
+                    src=""
+                    alt="Vehicle"
+                >
+
+                <div
+                    id="galleryThumbnails"
+                    class="gallery-thumbnails"
+                >
+                </div>
+
+            </div>
+
+
+            <p id="modalCarYear"></p>
+
+            <p id="modalCarCondition"></p>
+
+            <p id="modalCarTransmission"></p>
+
+            <p id="modalCarFuel"></p>
+
+            <p id="modalCarLocation"></p>
+
+            <p id="modalCarPrice"></p>
+
+            <p id="modalCarDescription"></p>
+
+
+            <a
+                id="modalWhatsApp"
+                target="_blank"
+            >
+                <button>
+                    WhatsApp About This Car
+                </button>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         FLOATING WHATSAPP BUTTON
+    ========================== -->
+
+    <a
+        href="https://wa.me/2348123261878?text=Hello%20TOO%20MUCH%20AUTOMOBILES,%20I%20would%20like%20to%20make%20an%20enquiry."
+        class="whatsapp-float"
+        target="_blank"
+        aria-label="Chat with TOO MUCH AUTOMOBILES on WhatsApp"
     >
+        💬
+    </a>
 
-    <div
-        id="galleryThumbnails"
-        class="gallery-thumbnails">
-    </div>
 
-    </div>
+    <!-- JavaScript -->
 
-        <p id="modalCarYear"></p>
-
-        <p id="modalCarCondition"></p>
-
-        <p id="modalCarTransmission"></p>
-
-        <p id="modalCarFuel"></p>
-
-        <p id="modalCarLocation"></p>
-
-        <p id="modalCarPrice"></p>
-
-        <p id="modalCarDescription"></p>
-
-        <a id="modalWhatsApp" target="_blank">
-            <button>WhatsApp About This Car</button>
-        </a>
-
-    </div>
-
-</div>
-<!-- Floating WhatsApp Button -->
-
-<a
-    href="https://wa.me/2348123261878?text=Hello%20TOO%20MUCH%20AUTOMOBILES,%20I%20would%20like%20to%20make%20an%20enquiry."
-    class="whatsapp-float"
-    target="_blank"
-    aria-label="Chat with TOO MUCH AUTOMOBILES on WhatsApp"
->
-    💬
-</a>
     <script src="script.js"></script>
 
 </body>
