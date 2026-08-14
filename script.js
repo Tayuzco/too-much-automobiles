@@ -1,26 +1,56 @@
 const searchInput = document.getElementById("carSearch");
+const conditionFilter = document.getElementById("conditionFilter");
+const fuelFilter = document.getElementById("fuelFilter");
+const yearFilter = document.getElementById("yearFilter");
+
 const carCards = document.querySelectorAll(".car-card");
 
-searchInput.addEventListener("input", function () {
+function filterCars() {
 
     const searchText = searchInput.value.toLowerCase();
+    const selectedCondition = conditionFilter.value.toLowerCase();
+    const selectedFuel = fuelFilter.value.toLowerCase();
+    const selectedYear = yearFilter.value;
 
-    carCards.forEach(function (card) {
+    carCards.forEach(function(card) {
 
-        const carName = card
-            .querySelector("h3")
-            .textContent
-            .toLowerCase();
+        const carName = card.querySelector("h3").textContent.toLowerCase();
 
-        if (carName.includes(searchText)) {
+        const cardText = card.textContent.toLowerCase();
+
+        const matchesSearch =
+            carName.includes(searchText);
+
+        const matchesCondition =
+            selectedCondition === "" ||
+            cardText.includes(selectedCondition);
+
+        const matchesFuel =
+            selectedFuel === "" ||
+            cardText.includes(selectedFuel);
+
+        const matchesYear =
+            selectedYear === "" ||
+            cardText.includes("year: " + selectedYear);
+
+        if (
+            matchesSearch &&
+            matchesCondition &&
+            matchesFuel &&
+            matchesYear
+        ) {
             card.style.display = "block";
         } else {
             card.style.display = "none";
         }
 
     });
+}
 
-});
+searchInput.addEventListener("input", filterCars);
+conditionFilter.addEventListener("change", filterCars);
+fuelFilter.addEventListener("change", filterCars);
+yearFilter.addEventListener("change", filterCars);
 
 
 function showCarDetails(
@@ -64,9 +94,10 @@ function showCarDetails(
     document.getElementById("modalMainImage").src = mainImage;
 
 
-    /* Create the correct gallery for this vehicle */
+    /* Vehicle photo gallery */
 
-    const gallery = document.getElementById("galleryThumbnails");
+    const gallery =
+        document.getElementById("galleryThumbnails");
 
     gallery.innerHTML = "";
 
@@ -80,16 +111,17 @@ function showCarDetails(
 
     const photos = [
         "front.jpeg",
-        "side.jpeg",
-        "interior.jpeg",
         "dashboard.jpeg",
-        "rear.jpeg"
+        "rear.jpeg",
+        "side.jpeg",
+        "interior.jpeg"
     ];
 
 
     photos.forEach(function(photo) {
 
-        const image = document.createElement("img");
+        const image =
+            document.createElement("img");
 
         image.src = folder + photo;
 
